@@ -1,0 +1,16 @@
+name: Build And Deploy to Gh Pages
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy Source
+    needs: build
+    steps:
+      - name: Checkout to source
+        uses: actions/checkout@source
+      - name: Run deploy script
+        run: npm run-script deploy
