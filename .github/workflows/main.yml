@@ -16,5 +16,6 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: master
+          BASE_BRANCH: source
           FOLDER: build
           BUILD_SCRIPT: npm install && npm run-script build
