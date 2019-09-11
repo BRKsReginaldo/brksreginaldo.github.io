@@ -8,7 +8,6 @@ on:
 jobs:
   build-and-deploy:
     name: Build and Deploy Source
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout to source
