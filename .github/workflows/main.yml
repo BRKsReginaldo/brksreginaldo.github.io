@@ -10,7 +10,5 @@ jobs:
     name: Build and Deploy Source
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout to source
-        uses: actions/checkout@source
       - name: Run deploy script
         run: npm run-script deploy
